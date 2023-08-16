@@ -44,8 +44,8 @@ const Pagination = ({
 
   
   return (
-    <tr>
-      <td colSpan={9} style={{ fontSize: '14px' }}>
+    <div>
+      <div style={{ fontSize: '14px' }}>
         <div
           style={{
             display: 'flex',
@@ -53,6 +53,7 @@ const Pagination = ({
             justifyContent: 'flex-end',
             padding: '0 5px 0',
             textAlign: 'right',
+            margin: "0 10px 0"
           }}
         >
           {showPrevious && (
@@ -105,8 +106,8 @@ const Pagination = ({
           )}
         </div>
         {errorMsg && <small style={{ color: 'white' }}>Page Not Found</small>}
-      </td>
-    </tr>
+      </div>
+    </div>
   );
 };
 

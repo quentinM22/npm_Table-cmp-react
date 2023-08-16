@@ -22,6 +22,7 @@ const Search= ({ setWordSearch, colorPrimary }: SearchProps ) => {
           background: colorPrimary,
           color: "white",
           outline: "none",
+          margin: "none"
         }}
         onChange={handleSearchChange}
         placeholder=" Search here"

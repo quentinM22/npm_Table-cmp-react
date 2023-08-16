@@ -20,7 +20,6 @@ const Select = ({ setElementsPerPage, setCurrentPage, colorPrimary }: SelectProp
         color: "white",
         border: "none",
         borderRadius: "5px",
-        margin: "10px 0 10px",
         height: "21px"
       }}
     >

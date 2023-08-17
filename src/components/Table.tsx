@@ -206,8 +206,8 @@ const Table = ({
               ))}
             </>
           ) : (
-            <div>
-              <td colSpan={9}>No data available in table</td>
+            <div style={{display:'flex', alignItems:'center', justifyContent: 'center', margin:"25px 0 25px", width:"100%"}}>
+              <div style={{color:colorPrimary, fontSize: "18px"}}>No data available in table</div>
             </div>
           )}
         </div>
@@ -233,6 +233,8 @@ const Table = ({
             >
               {thValue.map((th, index) => (
                 <div
+                  role='button'
+                  aria-label='sort'
                   key={index}
                   onClick={() => handleSort(th)}
                   style={{
@@ -255,6 +257,7 @@ const Table = ({
                   {!mobile && (
                     sortKey === th ? (
                       <span
+
                         style={{
                           fontSize: "14px",
                         }}
@@ -313,9 +316,9 @@ const Table = ({
                   ))}
                 </>
               ) : (
-                <div>
-                  <td colSpan={9}>No data available in table</td>
-                </div>
+                <div style={{display:'flex', alignItems:'center', justifyContent: 'center', margin:"25px 0 25px", width:"100%"}}>
+                <div style={{color:colorPrimary, fontSize: "18px"}}>No data available in table</div>
+              </div>
               )}
             </div>
           </div>

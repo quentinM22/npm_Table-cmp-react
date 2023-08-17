@@ -11,9 +11,10 @@ const Search= ({ setWordSearch, colorPrimary }: SearchProps ) => {
   };
 
   return (
-    <div style={{ height: "21px" }}>
+    <div style={{ height: "21px", display:'flex', alignItems:"center", margin:"none" }}>
       <input
-        type="text"
+        aria-label='search'
+        type="search"
         style={{
           height: "100%",
           padding: "0 10px 0",

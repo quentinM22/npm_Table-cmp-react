@@ -13,14 +13,17 @@ const Select = ({ setElementsPerPage, setCurrentPage, colorPrimary }: SelectProp
   };
 
   return (
-    <select
+    <>
+    <select 
+      aria-label='select the number of elements to display'
       onChange={handleChange}
       style={{
         background: colorPrimary,
         color: "white",
         border: "none",
         borderRadius: "5px",
-        height: "21px"
+        height: "21px",
+        margin: "none"
       }}
     >
       <option value="10">10</option>
@@ -28,6 +31,7 @@ const Select = ({ setElementsPerPage, setCurrentPage, colorPrimary }: SelectProp
       <option value="50">50</option>
       <option value="100">100</option>
     </select>
+    </>
   );
 };
 

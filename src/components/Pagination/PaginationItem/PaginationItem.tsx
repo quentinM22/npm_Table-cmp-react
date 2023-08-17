@@ -49,6 +49,7 @@ const PaginationItem = ({
         }}
       >
         <input
+          aria-label='Change page'
           type='text'
           value={inputValue}
           className="inputPage"
@@ -76,6 +77,7 @@ const PaginationItem = ({
             background: !hover ? "#0a3d62" : "#60a3bc",
             cursor: "pointer"
           }}
+          aria-label='Validation change page'
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
         >

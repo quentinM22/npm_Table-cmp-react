@@ -58,6 +58,7 @@ const Pagination = ({
         >
           {showPrevious && (
             <button
+            aria-label='Previous Page'
               onClick={handlePrevious}
               style={{
                 border: "none",
@@ -90,6 +91,7 @@ const Pagination = ({
           </ul>
           {showNext && (
             <button
+            aria-label='Next Page'
               onClick={handleNext}
               style={{
                 border: "none",
@@ -105,7 +107,7 @@ const Pagination = ({
             </button>
           )}
         </div>
-        {errorMsg && <small style={{ color: 'white' }}>Page Not Found</small>}
+        {errorMsg && <small style={{ color: 'white', width:'100%', textAlign:'center' }}>Page Not Found</small>}
       </div>
     </div>
   );

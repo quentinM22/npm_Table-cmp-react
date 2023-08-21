@@ -1,6 +1,10 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "license": "MIT",
+   "keywords": [
+    "modal",
+    "react"
+  ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "files": [

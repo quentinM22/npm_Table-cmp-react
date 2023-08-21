@@ -1,9 +1,10 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "license": "MIT",
    "keywords": [
-    "modal",
-    "react"
+    "table",
+    "react",
+    "responsive"
   ],
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",

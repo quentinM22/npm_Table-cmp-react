@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { range } from '../utils/function';
 import PaginationItem from './PaginationItem/PaginationItem';
 
 interface PaginationProps {
@@ -22,7 +21,6 @@ const Pagination = ({
   const [errorMsg, setErrorMsg] = useState<boolean>(false);
   const pageCount = Math.ceil(limit / total);
 
-  const pages = range(1, pageCount);
   const handlePrevious = () => {
     setCurrentPage(currentPage - 1);
   };
@@ -84,7 +82,7 @@ const Pagination = ({
             <PaginationItem
               currentPage={currentPage}
               setCurrentPage={setCurrentPage}
-              pagesLength={pages.length}
+              pagesLength={pageCount}
               setErrorMsg={setErrorMsg}
               colorPrimary={colorPrimary}
             />

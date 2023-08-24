@@ -1,5 +1,20 @@
 import React, { useEffect, useState, ChangeEvent } from 'react';
 
+/**
+ * PagintationItem- Component - Navigation table with input
+ * 
+ * @component
+ * @param {number} props.currentPage - Current active page.
+ * @param {Function} props.setCurrentPage - Function to set the current page.
+ * @param {number} props.pagesLength - Maximum items per page.
+ * @param {Function} props.setErrorMsg - Function to set the error messages.
+ * @param {string} props.colorPrimary - Primary color for styling.
+ * @returns {JSX.Element} - PaginationItem component JSX element.
+ * 
+ * @author quentinm22
+ * 
+ */
+
 interface PaginationItemProps {
   currentPage: number;
   setCurrentPage: (pageNumber: number) => void;
@@ -7,6 +22,7 @@ interface PaginationItemProps {
   setErrorMsg: (error: boolean) => void;
   colorPrimary: string
 }
+
 
 const PaginationItem = ({
   currentPage,
@@ -26,7 +42,6 @@ const PaginationItem = ({
   useEffect(() => {
     setInputValue(currentPage.toString());
   }, [currentPage]);
-
   const handleBlur = () => {
     const pageNumber = parseInt(inputValue, 10);
     if (!isNaN(pageNumber) && pageNumber >= 1 && pageNumber <= pagesLength) {

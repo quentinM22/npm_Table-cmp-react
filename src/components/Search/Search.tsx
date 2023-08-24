@@ -1,11 +1,21 @@
 import React, { ChangeEvent } from 'react';
 
+/**
+ * Search - Component - Input Search 
+ * @param {Function} props.setWordSearch - Function to set word search.
+ * @param {string} props.colorPrimary - Primary color for styling.
+ * @returns {JSX.Element} - Input search component JSX element.
+ * 
+ * @author quentinm22
+ * 
+ */
+
 interface SearchProps {
   setWordSearch: (word: string) => void;
   colorPrimary: string;
 }
 
-const Search= ({ setWordSearch, colorPrimary }: SearchProps ) => {
+const Search = ({ setWordSearch, colorPrimary }: SearchProps ) => {
   const handleSearchChange = (e: ChangeEvent<HTMLInputElement>) => {
     setWordSearch(e.target.value);
   };

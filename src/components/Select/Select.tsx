@@ -1,5 +1,18 @@
 import React, { ChangeEvent } from 'react';
 
+/**
+ * Select - Component - Select number for rendering list per page
+ * 
+ * @component
+ * @param {Function} props.setCurrentPage - Function to set the current page.
+ * @param {Function} props.setElementsPerPage - Function to set the number of element per pages.
+ * @param {string} props.colorPrimary - Primary color for styling.
+ * @returns {JSX.Element} - Pagination component JSX element.
+ * 
+ * @author quentinm22
+ * 
+ */
+
 interface SelectProps {
   setElementsPerPage: (elements: number) => void;
   setCurrentPage: (page: number) => void;

@@ -1,6 +1,23 @@
 import React, { useEffect, useState } from 'react';
 import PaginationItem from './PaginationItem/PaginationItem';
 
+/**
+ * Pagination - Component - Navigation table with button "<" / ">"
+ * 
+ * @component
+ * @param {Object} props - Component props.
+ * @param {number} props.currentPage - Current active page.
+ * @param {Function} props.setCurrentPage - Function to set the current page.
+ * @param {number} props.limit - Maximum items per page.
+ * @param {number} props.total - Total number of items.
+ * @param {string} props.colorPrimary - Primary color for styling.
+ * @returns {JSX.Element} - Pagination component JSX element.
+ * 
+ * @author quentinm22
+ * 
+ */
+
+
 interface PaginationProps {
   currentPage: number;
   setCurrentPage: (pageNumber: number) => void;
